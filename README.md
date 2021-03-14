@@ -33,6 +33,10 @@
 
 1. Explain BDD, TDD.
 
+    - [link 1](https://www.pluralsight.com/blog/software-development/tdd-vs-bdd#:~:text=TDD%20is%20a%20development%20practice,BDD%20are%20effectively%20the%20same.)
+    - [link 2](https://www.browserstack.com/guide/tdd-vs-bdd-vs-atdd)
+    - [link 3](https://blog.testlodge.com/tdd-vs-bdd/)
+
 1. Explain your framework structure/modules.
 
 1. Explain your framework execution flow.
@@ -56,6 +60,24 @@
 1. You just told that you use maven in your project, for what propose you use maven?
 
 1. How you inject dependencies in your framework? You add .jar files or you inject in to your POM.xml file?
+
+    We use maven, so we add our dependencies to the `POM.xml` file. So we do not add jar files manually.
+    In the POM.xml file there is a `<dependencies></dependencies>` tag, inside which each dependency is defined.
+
+    <ins>Example:</ins>
+    ```xml
+    <dependencies>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</`artifactId>
+            <version>3.141.59</version>`
+        </dependency>
+        .
+        .
+        .
+        // Other dependencies go here
+    </dependencies>
+    ```
 
 1. What plugin or dependencies you use in your frame work?
 
