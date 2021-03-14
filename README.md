@@ -96,6 +96,11 @@
 
 1. What is difference between `src/main/java` and `src/test/java`?
 
+    If we are using maven or gradle as our build tool, they consider `src/test/java` package to contain the automated test cases and `src/main/java` to contains the actual code.
+    We do not want to ship the automated test cases to production as they are not part of the actual application used by the users.
+    Maven/gradle do not include the code under `src/test/java` to the final build file which keeps the build size down and enables faster uploading.
+    [stackoverflow](https://stackoverflow.com/questions/49995270/difference-between-src-main-java-and-src-test-java-in-a-maven-project) link.
+
 1. Where from you getting the test data, you use excel, csv or database? How?
 
 1. Do you follow agile? How?
